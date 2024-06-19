@@ -1,10 +1,13 @@
 import '../App.css';
 import PropTypes from 'prop-types';
-import { store } from '../../store';
+
+import { useSelector } from 'react-redux';
+import { selectField } from '../../selectors';
 
 export function FieldLayout({arry, onClickCl})  {
 
-    const { field } = store.getState();
+    const field = useSelector(selectField);
+
      
     return (
         <table>

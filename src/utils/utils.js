@@ -3,6 +3,7 @@ export function gameOver (fld){
      *  Игра окончена?
      *  Если да, вернем победителя
      **********************************************************/
+      
       let tmp = new Array(3);
       let tmpFull = [];
       let res = false;
